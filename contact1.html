@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ - TTGroup</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="vgnav.css">
+    <link rel="stylesheet" href="vgnav-theme.css">
+    <style>
+        .contact-form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            max-width: 500px;
+            margin: 0 auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .contact-form button {
+            background-color: #00A0A2;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #008080;
+        }
+    </style>
+</head>
+
+<body>
+    <form class="contact-form">
+        <label for="name">Họ tên</label>
+        <input type="text" id="name" name="name" placeholder="Nhập họ tên của bạn" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Nhập địa chỉ email" required>
+
+        <label for="subject">Tiêu đề</label>
+        <input type="text" id="subject" name="subject" placeholder="Nhập tiêu đề" required>
+
+        <label for="message">Nội dung</label>
+        <textarea id="message" name="message" placeholder="Nhập nội dung tin nhắn" rows="5" required></textarea>
+
+        <button type="submit">Gửi</button>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="vgnav.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.vg-nav').vegasMenu();
+        })
+    </script>
+</body>
+
+</html>

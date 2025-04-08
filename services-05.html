@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TTGroup</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="vgnav.css">
+    <link rel="stylesheet" href="vgnav-theme.css">
+    <script src="smooth-scroll.polyfills.min.js"></script>
+</head>
+
+<body>
+    <section id="header" class="menu-bg">
+        <img src="img/logo3.png" class="logo" alt="">
+        <nav class="vg-nav vg-nav-md">
+            <ul>
+                <li>
+                    <a href="home.html">Trang chủ</a>
+                </li>
+                <li class="dropdown active">
+                    <a>Dịch vụ</a>
+                    <ul class="left">
+                        <li><a href="services-01.html">Wifi cố định</a></li>
+                        <li><a href="services-02.html">Sim nghe gọi và data</a></li>
+                        <li><a href="services-03.html">Xúc tiến TMĐT và Du lịch</a></li>
+                        <li class="dropdown">
+                            <a>Tư vấn du học</a>
+                            <ul class="left">
+                                <li><a href="services-04.html">Du học Nhật Bản</a></li>
+                                <li><a href="services-04.html">Du học Hàn Quốc</a></li>
+                            </ul>
+                        </li>
+                        <li class="active"><a href="services-05.html">Giới thiệu việc làm</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="company.html">Về công ty</a>
+                </li>
+                <li>
+                    <a href="careers.html">Tuyển dụng</a>
+                </li>
+                <li>
+                    <a href="contact.html">Liên hệ</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+
+    <section class="bannerc">
+        <div class="bannerc-row">
+            <h1>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                <i class="fa fa-suitcase" aria-hidden="true"></i>Dịch vụ
+                <i class="fa fa-angle-right" aria-hidden="true"></i>Giới thiệu việc làm
+            </h1>
+        </div>
+    </section>
+    <section id="services">
+        <div class="services-box">
+            <div class="service-row">
+                <h2>Giới thiệu việc làm</h2>
+                <div class="service-content">
+                    <img src="img/timviec2.webp" alt="">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam alias dolore voluptatum in excepturi accusantium enim voluptatibus expedita labore illo. Eligendi adipisci reiciendis nisi, accusamus nemo soluta molestiae doloremque error.</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam error dignissimos veniam ad quas et eum id optio, ab laudantium, sapiente mollitia assumenda, qui repellendus sunt quae doloribus. Modi, aspernatur?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, assumenda deleniti quo hic nisi beatae tempore, adipisci obcaecati eos numquam quidem voluptate vitae odio ipsum eius neque! Vel, ratione labore!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, illo corrupti. Laudantium rerum architecto corrupti quia dolor nulla, accusantium quae at quasi voluptates qui perferendis nesciunt exercitationem eveniet atque odit?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <section id="footerc">
+        <div class="footerc-row">
+            <ul>
+                <li><a href="privacy.html">Chính sách trang web</a></li>
+                <li><a href="privacy.html">Chính sách bảo mật thông tin cá nhân</a></li>
+                <li><a href="">Site maps</a></li>
+            </ul>
+            <p>Bản quyền © 2025 T&T Group</p>
+        </div>
+    </section>
+    <!-- Back to top button -->
+    <button id="toTopBtn"></button>
+
+    <script type="text/javascript">
+        // xem them
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 1000,
+            speedAsDuration: true
+        });
+
+        // back to top button
+        var btn = document.getElementById('toTopBtn');
+
+        window.addEventListener('scroll', function (event) {
+            if (window.scrollY > 300) {
+                btn.classList.add("show");
+            } else {
+                btn.classList.remove("show");
+            }
+        });
+        btn.onclick = function (e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+            });
+        };
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh"
+        crossorigin="anonymous"></script>
+    <script src="vgnav.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.vg-nav').vegasMenu();
+        })
+    </script>
+</body>
+
+</html>
