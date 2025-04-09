@@ -30,14 +30,14 @@
                     </li>
                     <li class="dropdown">
                         <a>Dịch vụ</a>
-                        <ul class="left">
+                        <ul>
                             <li><a href="services-01.html">Wifi cố định</a></li>
                             <li><a href="services-02.html">Sim nghe gọi và data</a></li>
                             <li><a href="services-03.html">Xúc tiến TMĐT và Du lịch</a></li>
                             <li class="dropdown">
                                 <a>Tư vấn du học</a>
-                                <ul class="left">
-                                    <li><a href="services-04.html">Du học Nhật Bản</a></li>
+                                <ul>
+                                    <li><a href="services-041.html">Du học Nhật Bản</a></li>
                                     <li><a href="services-04.html">Du học Hàn Quốc</a></li>
                                 </ul>
                             </li>
@@ -53,6 +53,14 @@
                     <li>
                         <a href="contact.html">Liên hệ</a>
                     </li>
+                    <li><a href="login.html">Login</a></li>
+                    <!-- <li class="dropdown">
+                        <a><i class="fa-solid fa-circle-user"></i></a>
+                        <ul>
+                            <li><a href="/profile">Trang cá nhân</a></li>
+                            <li><a href="/logout">Đăng xuất</a></li>
+                        </ul>
+                    </li> -->
                 </ul>
             </nav>
         </section>
@@ -142,7 +150,8 @@
                     <img src="img/service-sim.jpg" alt="">
                     <a class="overlay" href="services-02.html"></a>
                     <div class="service-desc">
-                        <h3>SIM data ta bán đứt thanh toán theo tháng rất tiện lợi, không phải mất chta bán đứt thanh toán theo tháng rất tiện lợi, không phải mất ch</h3>
+                        <h3>SIM data ta bán đứt thanh toán theo tháng rất tiện lợi, không phải mất chta bán đứt thanh
+                            toán theo tháng rất tiện lợi, không phải mất ch</h3>
                         <hr>
                         <p>SIM data bán đứt thanh toán theo tháng rất tiện lợi, không phải mất chi phí lớn để có data
                             mọi
@@ -150,10 +159,22 @@
                     </div>
                 </div>
                 <div class="single-service">
+                    <img src="img/duhocnhat.webp" alt="">
+                    <a class="overlay" href="services-041.html"></a>
+                    <div class="service-desc">
+                        <h3>Tư vấn du học Nhật Bản</h3>
+                        <hr>
+                        <p>Tại các sự kiện triển lãm du học của chúng tôi, bạn có thể gặp gỡ với đại diện trường và trao
+                            đổi
+                            trực tiếp về triển vọng học tập, cơ hội nghề nghiệp trong tương lai.</p>
+                    </div>
+                </div>
+                
+                <div class="single-service">
                     <img src="img/service-study-abroad.jpg" alt="">
                     <a class="overlay" href="services-04.html"></a>
                     <div class="service-desc">
-                        <h3>Tư vấn du học</h3>
+                        <h3>Tư vấn du học Hàn Quốc</h3>
                         <hr>
                         <p>Tại các sự kiện triển lãm du học của chúng tôi, bạn có thể gặp gỡ với đại diện trường và trao
                             đổi
@@ -179,7 +200,10 @@
                         <hr>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim numquam aut eligendi
                             temporibus iure rem dolorem officiis, suscipit animi, quidem id dolor consectetur blanditiis
-                            cumque fuga magnam, harum ea ullam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam saepe dolorem autem aut possimus doloribus, culpa recusandae? Iste assumenda placeat, sint quae aspernatur perspiciatis cupiditate repellat autem, accusantium laborum voluptate?</p>
+                            cumque fuga magnam, harum ea ullam. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Ipsam saepe dolorem autem aut possimus doloribus, culpa recusandae? Iste assumenda placeat,
+                            sint quae aspernatur perspiciatis cupiditate repellat autem, accusantium laborum voluptate?
+                        </p>
                     </div>
                 </div>
             </div>
@@ -264,6 +288,31 @@
         <button id="toTopBtn"></button>
 
         <script type="text/javascript">
+            // user icon
+            // let userIcon, dropdown;
+            // document.addEventListener('DOMContentLoaded', function () {
+            //     userIcon = document.getElementById('userIcon');
+            //     dropdown = document.getElementById('userDropdown');
+
+            //     userIcon.addEventListener('click', function (e) {
+            //         console.log("click icon");
+            //         e.stopPropagation();
+            //         userIcon.classList.toggle('user-menu-open');
+            //     });
+            // });
+
+            // Ẩn dropdown khi click ra ngoài
+            // window.addEventListener('click', function (e) {
+            //     if (
+            //         userIcon &&
+            //         dropdown &&
+            //         !userIcon.contains(e.target) &&
+            //         !dropdown.contains(e.target)
+            //     ) {
+            //         userIcon.classList.remove('user-menu-open');
+            //     }
+            // });
+
             // xem them
             var scroll = new SmoothScroll('a[href*="#"]', {
                 speed: 1000,
@@ -292,7 +341,7 @@
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"
             integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh"
             crossorigin="anonymous"></script>
-        <script src="vgnav.min.js"></script>
+        <script src="nav.min.js"></script>
         <script>
             $(document).ready(function () {
                 $('.vg-nav').vegasMenu();

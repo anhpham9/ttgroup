@@ -28,12 +28,12 @@ a {
     background: #00A0A2;
 }
 
-.vg-nav .dropdown ul {
+.vg-nav .dropdown ul, .user-dropdown {
 	background: rgba(255, 255, 255, 0.9);
 	box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15)
 }
 
-.vg-nav .dropdown ul li a {
+.vg-nav .dropdown ul li a, .user-dropdown li a {
 	text-decoration: none;
 	font-size: 14px;
 	display: flex;
@@ -44,7 +44,7 @@ a {
 	border-top: none
 }
 
-.vg-nav .dropdown ul li:first-child a {
+.vg-nav .dropdown ul li:first-child a, .user-dropdown li:first-child a  {
 	border: 1px solid rgba(0, 0, 0, 0.1)
 }
 

@@ -21,15 +21,15 @@ img {
     /* sửa lỗi chiều cao của ảnh và div chênh lệch do font chu */
 }
 
-/* .menu-bg {
-    background-color: #fff;
-    box-shadow: 0px 4px 4px #e6e5e5;
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* Cấu trúc chiều dọc */
 }
-
-.menu-transparent {
-    background-color: transparent;
-    box-shadow: none;
-} */
 
 .open {
     display: initial !important;
@@ -41,8 +41,9 @@ img {
     top: 0;
     left: 0;
     right: 0;
-    padding: 0 2rem;
+    /* padding: 0 2rem; */
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     background: #fff;
@@ -51,7 +52,7 @@ img {
 }
 
 #header .logo {
-    width: 200px;
+    width: 100px;
 }
 
 #header .navbar ul {
@@ -720,7 +721,7 @@ hr {
 }
 
 #footerc {
-    padding: 100px 0 20px;
+    padding: 20px 0;
 }
 
 .footerc-row {
@@ -881,7 +882,9 @@ hr {
 /* contact  */
 #contact,
 #company,
-#services {
+#services,
+#login,
+#register {
     width: 100%;
     padding: 70px 0;
 }
@@ -1170,7 +1173,8 @@ h1 i {
     flex-grow: 1;
 }
 
-.services-box {
+.services-box,
+.login-box {
     width: 80%;
     margin: auto;
     max-width: 1200px;
@@ -1227,5 +1231,175 @@ h1 i {
 @media screen and (max-width: 770px) {
     .service-img {
         width: 100%;
+    }
+}
+
+#login {
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.login-row {
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-row h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group .error {
+    color: red;
+    font-style: italic;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+.form-group button {
+    width: 100%;
+    padding: 12px;
+    background-color: #00A0A2;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background-color: #008b8d;
+}
+
+.form-footer {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.form-footer a {
+    color: #00A0A2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.form-footer a:hover {
+    text-decoration: underline;
+}
+
+.profile-item {
+    display: flex;
+    margin-bottom: 15px;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.profile-item label {
+    width: 150px;
+    font-weight: bold;
+    color: #333;
+}
+
+.profile-item span {
+    flex: 1;
+    color: #555;
+}
+.service-content a:link {
+    color: #00A0A2;
+    font-weight: bold;
+}
+.service-content a:link:hover {
+    text-decoration: underline;
+}
+@media (max-width: 770px) {
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    #header .logo {
+        width: 70px;
+    }
+
+    .bannerc {
+        padding-top: 90px;
+        min-height: 145px;
+    }
+
+    #maps {
+        padding: 20px 0;
+    }
+
+    #contact,
+    #company,
+    #services,
+    #login,
+    #register {
+        padding: 10px 0;
+    }
+
+    .login-box {
+        width: 100%;
+    }
+
+    .profile-item {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 430px) {
+    #header .logo {
+        width: 50px;
+    }
+
+    .bannerc {
+        padding-top: 80px;
+        min-height: 165px;
+    }
+
+    .show-contact-label {
+        font-size: 12px;
+    }
+
+    .profile-item {
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    .profile-item label {
+        width: auto;
+        margin-bottom: 5px;
     }
 }
