@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang cá nhân</title>
+    <title>Thư ngỏ từ đại diện công ty</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style1.css">
     <link rel="stylesheet" href="vgnav.css">
     <link rel="stylesheet" href="vgnav-theme.css">
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&display=swap" rel="stylesheet">
     <script src="smooth-scroll.polyfills.min.js"></script>
 </head>
 
@@ -25,13 +26,13 @@
                 </li>
                 <li class="dropdown">
                     <a>Dịch vụ</a>
-                    <ul class="left">
+                    <ul>
                         <li><a href="services-01.html">Wifi cố định</a></li>
                         <li><a href="services-02.html">Sim nghe gọi và data</a></li>
                         <li><a href="services-03.html">Xúc tiến TMĐT và Du lịch</a></li>
                         <li class="dropdown">
                             <a>Tư vấn du học</a>
-                            <ul class="left">
+                            <ul>
                                 <li><a href="services-041.html">Du học Nhật Bản</a></li>
                                 <li><a href="services-04.html">Du học Hàn Quốc</a></li>
                             </ul>
@@ -39,11 +40,11 @@
                         <li><a href="services-05.html">Giới thiệu việc làm</a></li>
                     </ul>
                 </li>
-                <li class="dropdown">
+                <li class="active dropdown">
                     <a>Công ty</a>
                     <ul>
                         <li><a href="company.html">Thông tin công ty</a></li>
-                        <li><a href="company-message.html">Thư ngỏ</a></li>
+                        <li class="active"><a href="company-message.html">Thư ngỏ</a></li>
                     </ul>
                 </li>
                 <li>
@@ -52,14 +53,14 @@
                 <li>
                     <a href="contact.html">Liên hệ</a>
                 </li>
-                <!-- <li><a href="login.html">Login</a></li> -->
-                <li class="dropdown active">
+                <li><a href="login.html">Login</a></li>
+                <!-- <li class="dropdown">
                     <a><i class="fa-solid fa-circle-user"></i></a>
                     <ul>
-                        <li class="active"><a href="/profile">Trang cá nhân</a></li>
-                        <li><a href="login.html">Đăng xuất</a></li>
+                        <li><a href="/profile">Trang cá nhân</a></li>
+                        <li><a href="/logout">Đăng xuất</a></li>
                     </ul>
-                </li>
+                </li> -->
             </ul>
         </nav>
     </section>
@@ -69,60 +70,26 @@
             <h1>
                 <i class="fa fa-home" aria-hidden="true"></i>
                 <i class="fa fa-angle-right" aria-hidden="true"></i>
-                <i class="fa-solid fa-id-card"></i>Profile
+                <i class="fa-solid fa-user-tie"></i>Thư ngỏ
             </h1>
         </div>
     </section>
-    <section id="services">
-        <div class="services-box">
-            <div class="service-row">
-                <h2>Thông tin cá nhân</h2>
-                <div class="service-content">
-                    <div class="profile-item">
-                        <label>Họ:</label>
-                        <span>Nguyễn</span>
-                    </div>
-
-                    <div class="profile-item">
-                        <label>Tên:</label>
-                        <span>Văn A</span>
-                    </div>
-
-                    <div class="profile-item">
-                        <label>Giới tính:</label>
-                        <span>Nam</span>
-                    </div>
-
-                    <div class="profile-item">
-                        <label>Ngày sinh:</label>
-                        <span>1995-06-20</span>
-                    </div>
-
-                    <div class="profile-item">
-                        <label>Quốc tịch:</label>
-                        <span>Việt Nam</span>
-                    </div>
-
-                    <div class="profile-item">
-                        <label>Mã bưu điện:</label>
-                        <span>123-4567</span>
-                    </div>
-
-                    <div class="profile-item">
-                        <label>Địa chỉ:</label>
-                        <span>1-2-3 Shinjuku, Tokyo, Japan</span>
-                    </div>
-
-                    <div class="profile-item">
-                        <label>Số điện thoại:</label>
-                        <span>090-1234-5678</span>
-                    </div>
-
-                    <div class="profile-item">
-                        <label>Email:</label>
-                        <span>example@email.com</span>
-                    </div>
-                </div>
+    <section id="company">
+        <div class="company-box">
+            <h2>Thư ngỏ từ đại diện công ty</h2>
+            <div class="company-message">
+                <h3>Lời chào trân trọng từ Giám đốc đại diện Trần Ngọc Anh.</h3>
+                <img src="img/contact.webp" alt="Giám đốc đại diện Trần Ngọc Anh">
+                <p>Kính gửi <b>Quý khách hàng, Quý đối tác</b> và <b>toàn thể bạn bè thân thiết</b>.</p>
+                <p>Trước hết, cho phép tôi – đại diện cho <b>Ban lãnh đạo công ty T&T Group</b> – xin gửi lời chào trân
+                    trọng, lời cảm ơn chân thành đến Quý vị đã luôn đồng hành, tin tưởng và ủng hộ chúng tôi trong suốt
+                    chặng đường vừa qua.</p>
+                <p>Xuất phát điểm là một công ty viễn thông cho người Việt, <b>T&T Group</b> mong muốn mang đến các
+                    dịch vụ viễn thông tiện lợi nhất, với chi phí tiết kiệm nhất nhằm hỗ trợ cho cộng đồng người Việt
+                    đang sống, học tập và làm việc tại Nhật Bản.</p>
+                <p>Với phương châm kinh doanh đặt chữ <b>"Tâm"</b> lên hàng đầu và giữ vững chữ <b>"Tín"</b> trong mọi
+                    cam kết. Với tinh thần không ngừng đổi mới, <b>T&T Group</b> tự hào đồng hành cùng khách hàng trong
+                    suốt quá trình ở Nhật Bản.</p>
             </div>
         </div>
     </section>
