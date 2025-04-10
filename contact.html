@@ -17,7 +17,12 @@
 
 <body>
     <section id="header" class="menu-bg">
-        <img src="img/logo3.png" class="logo" alt="">
+        <img src="img/logo6.png" class="logo" alt="">
+        <div class="lang-select">
+            <button class="lang-btn lang-selected" data-lang="vn">VN</button>
+            <span></span>
+            <button class="lang-btn" data-lang="jp">JP</button>
+        </div>
         <nav class="vg-nav vg-nav-md">
             <ul>
                 <li>
@@ -25,7 +30,7 @@
                 </li>
                 <li class="dropdown">
                     <a>Dịch vụ</a>
-                    <ul class="left">
+                    <ul>
                         <li><a href="services-01.html">Wifi cố định</a></li>
                         <li><a href="services-02.html">Sim nghe gọi và data</a></li>
                         <li><a href="services-03.html">Xúc tiến TMĐT và Du lịch</a></li>
@@ -39,8 +44,12 @@
                         <li><a href="services-05.html">Giới thiệu việc làm</a></li>
                     </ul>
                 </li>
-                <li>
-                    <a href="company.html">Về công ty</a>
+                <li class="dropdown">
+                    <a>Công ty</a>
+                    <ul>
+                        <li><a href="company.html">Thông tin công ty</a></li>
+                        <li><a href="company-message.html">Thư ngỏ</a></li>
+                    </ul>
                 </li>
                 <li>
                     <a href="careers.html">Tuyển dụng</a>
@@ -52,7 +61,7 @@
                 <li class="dropdown">
                     <a><i class="fa-solid fa-circle-user"></i></a>
                     <ul>
-                        <li><a href="profile.html">Trang cá nhân</a></li>
+                        <li class=""><a href="profile.html">Trang cá nhân</a></li>
                         <li><a href="login.html">Đăng xuất</a></li>
                     </ul>
                 </li>
@@ -99,10 +108,10 @@
                 — <em>Xin hãy cho chúng tôi biết ý kiến của bạn</em>—
             </label>
             <form class="styled-contact-form">
-                <label for="name">Họ*</label>
-                <input type="text" id="name" name="name" required>
-                <label for="name">Tên*</label>
-                <input type="text" id="name" name="name" required>
+                <label for="lastName">Họ*</label>
+                <input type="text" id="lastName" name="lastName" required>
+                <label for="firstName">Tên*</label>
+                <input type="text" id="firstName" name="firstName" required>
 
                 <label for="email">Email*</label>
                 <input type="email" id="email" name="email" required>
@@ -219,7 +228,7 @@
             <ul>
                 <li><a href="privacy.html">Chính sách trang web</a></li>
                 <li><a href="privacy.html">Chính sách bảo mật thông tin cá nhân</a></li>
-                <li><a href="">Site maps</a></li>
+                
             </ul>
             <p>Bản quyền © 2025 T&T Group</p>
         </div>

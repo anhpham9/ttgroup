@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TTGroup</title>
+    <title>T&T Group</title>
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
@@ -19,10 +19,12 @@
 <body>
     <div id="app">
         <section id="header" class="menu-bg">
-            <img src="img/logo3.png" class="logo" alt="">
-            <!-- <div class="toggle-btn">
-                <i class="fa-solid fa-bars"></i>
-            </div> -->
+            <img src="img/logo6.png" class="logo" alt="">
+            <div class="lang-select">
+                <button class="lang-btn lang-selected" data-lang="vn">VN</button>
+                <span></span>
+                <button class="lang-btn" data-lang="jp">JP</button>
+            </div>
             <nav class="vg-nav vg-nav-md">
                 <ul>
                     <li class="active">
@@ -36,7 +38,7 @@
                             <li><a href="services-03.html">Xúc tiến TMĐT và Du lịch</a></li>
                             <li class="dropdown">
                                 <a>Tư vấn du học</a>
-                                <ul>
+                                <ul class="left">
                                     <li><a href="services-041.html">Du học Nhật Bản</a></li>
                                     <li><a href="services-04.html">Du học Hàn Quốc</a></li>
                                 </ul>
@@ -44,8 +46,12 @@
                             <li><a href="services-05.html">Giới thiệu việc làm</a></li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="company.html">Về công ty</a>
+                    <li class="dropdown">
+                        <a>Công ty</a>
+                        <ul>
+                            <li><a href="company.html">Thông tin công ty</a></li>
+                            <li><a href="company-message.html">Thư ngỏ</a></li>
+                        </ul>
                     </li>
                     <li>
                         <a href="careers.html">Tuyển dụng</a>
@@ -54,11 +60,11 @@
                         <a href="contact.html">Liên hệ</a>
                     </li>
                     <li><a href="login.html">Login</a></li>
-                    <!-- <li class="dropdown">
+                    <!-- <li class="dropdown active">
                         <a><i class="fa-solid fa-circle-user"></i></a>
                         <ul>
-                            <li><a href="/profile">Trang cá nhân</a></li>
-                            <li><a href="/logout">Đăng xuất</a></li>
+                            <li class="active"><a href="/profile">Trang cá nhân</a></li>
+                            <li><a href="login.html">Đăng xuất</a></li>
                         </ul>
                     </li> -->
                 </ul>
@@ -140,14 +146,14 @@
                     <img src="img/service-wiless.jpg" alt="">
                     <a class="overlay" href="services-01.html"></a>
                     <div class="service-desc">
-                        <h3>Wifi toc do cao</h3>
+                        <h3>Wifi tốc độ cao</h3>
                         <hr>
                         <p>Tốc độ mạng 1000mbps mang đến cho bạn đường truyền chất lượng rất ổn định, vượt mong đợi của
                             khách hàng</p>
                     </div>
                 </div>
                 <div class="single-service">
-                    <img src="img/service-sim.jpg" alt="">
+                    <img src="img/sim3.webp" alt="">
                     <a class="overlay" href="services-02.html"></a>
                     <div class="service-desc">
                         <h3>SIM data ta bán đứt thanh toán theo tháng rất tiện lợi, không phải mất chta bán đứt thanh
@@ -159,7 +165,7 @@
                     </div>
                 </div>
                 <div class="single-service">
-                    <img src="img/duhocnhat.webp" alt="">
+                    <img src="img/nhat.webp" alt="">
                     <a class="overlay" href="services-041.html"></a>
                     <div class="service-desc">
                         <h3>Tư vấn du học Nhật Bản</h3>
@@ -169,9 +175,9 @@
                             trực tiếp về triển vọng học tập, cơ hội nghề nghiệp trong tương lai.</p>
                     </div>
                 </div>
-                
+
                 <div class="single-service">
-                    <img src="img/service-study-abroad.jpg" alt="">
+                    <img src="img/han.webp" alt="">
                     <a class="overlay" href="services-04.html"></a>
                     <div class="service-desc">
                         <h3>Tư vấn du học Hàn Quốc</h3>
@@ -182,7 +188,7 @@
                     </div>
                 </div>
                 <div class="single-service">
-                    <img src="img/timviec2.webp" alt="">
+                    <img src="img/job.webp" alt="">
                     <a class="overlay" href="services-05.html"></a>
                     <div class="service-desc">
                         <h3>Giới thiệu việc làm</h3>
@@ -257,7 +263,7 @@
 
         <!-- footer -->
         <section id="footer">
-            <img class="footer-img" src="img/logo3.png" alt="">
+            <img class="footer-img" src="img/logo6.png" alt="">
             <div class="title-text">
                 <p>CONTACT</p>
                 <h1>Liên hệ với chúng tôi</h1>
