@@ -47,7 +47,7 @@ html {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    background: #fff;
+    background-color: rgba(255, 255, 255, 0.95);
     border-bottom: 2px solid #00A0A2;
     z-index: 1000;
 }
@@ -698,27 +698,27 @@ hr {
 }
 
 .social-links {
-    text-align: center;
-}
-
-.social-links a {
-    transition: .5s;
-    display: inline-block;
-    margin: 20px 5px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .social-links img {
-    height: 40px;
-    width: 40px;
+    flex: 1 1 calc(25% - 7.5px);
+    height: auto;
+    max-width: calc(25% - 7.5px);
+    /* Chống overflow */
+    box-sizing: border-box;
 }
 
-.social-links a:hover {
-    transform: translateY(-7px);
+.footer-social {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 800px;
 }
 
-.social-links p {
-    font-size: 12px;
-    margin-top: 10px;
+.footer-social p {
+    text-align: center;
 }
 
 #footerc {
@@ -1405,10 +1405,10 @@ h1 i {
     padding: 20px 0;
 }
 
-.company-message img {
+/* .company-message img {
     border-radius: 100px;
     padding: 20px 0;
-}
+} */
 
 .company-message p {
     text-indent: 2em;
@@ -1499,15 +1499,30 @@ hr {
     }
 }
 
+.cpn-m {
+    display: flex;
+    align-items: center;
+    /* hoặc center nếu muốn ảnh và chữ căn giữa theo chiều dọc */
+    gap: 20px;
+    /* Khoảng cách giữa ảnh và chữ */
+    flex-direction: row-reverse;
+}
+
+.cpn-m img,
+.cpn-mdetail {
+    flex: 1;
+    /* Chia đều không gian: 50% - 50% */
+    max-width: 50%;
+    box-sizing: border-box;
+}
+.cpn-m img {
+    border-radius: 10px;
+}
+
 @media (max-width: 770px) {
     .form-row {
         flex-direction: column;
         gap: 0;
-    }
-
-    .company-message img {
-        border-radius: 50px;
-        padding: 15px 0;
     }
 
     #header .logo {
@@ -1521,6 +1536,15 @@ hr {
 
     #maps {
         padding: 20px 0;
+    }
+
+    .cpn-m {
+        flex-direction: column;
+    }
+
+    .cpn-m img,
+    .cpn-mdetail {
+        max-width: 100%;
     }
 
     #contact,
@@ -1572,14 +1596,14 @@ hr {
         padding: 10px 0;
     }
 
-    .company-message img {
-        border-radius: 20px;
-        padding: 10px 0;
-    }
-
     .company-message p {
         text-indent: 10px;
         padding: 5px 0;
         line-height: 22px;
+    }
+
+    .social-links img {
+        flex: 1 1 calc(50% - 5px);
+        max-width: calc(50% - 5px);
     }
 }
