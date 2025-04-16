@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TTGroup</title>
+    <title>T&T Group</title>
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
@@ -17,289 +17,322 @@
 </head>
 
 <body>
-    <section id="header">
-        <img src="img/logo.png" class="logo" alt="">
-        <!-- <div class="toggle-btn">
-            <i class="fa-solid fa-bars"></i>
-        </div> -->
-        <nav class="vg-nav vg-nav-md">
-            <ul>
-                <li class="active">
-                    <a href="/">Trang chủ</a>
-                </li>
-                <li class="dropdown">
-                    <a href="">Dịch vụ</a>
-                    <ul class="left">
-                        <li><a href="/">Wifi cố định</a></li>
-                        <li><a href="/">Sim nghe gọi và data</a></li>
-                        <li><a href="/">Xúc tiến TMĐT và Du lịch</a></li>
-                        <li class="dropdown">
-                            <a href="">Tư vấn du học</a>
-                            <ul class="left">
-                                <li><a href="/">Du học Nhật Bản</a></li>
-                                <li><a href="/">Du học Hàn Quốc</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="/">Giới thiệu việc làm</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Về công ty</a>
-                </li>
-                <li>
-                    <a href="#">Tuyển dụng</a>
-                </li>
-                <li>
-                    <a href="/contact.html">Liên hệ</a>
-                </li>
-            </ul>
-        </nav>
-    </section>
-    <section id="banner">
-        <!-- <img src="img/logo.png" class="logo" alt=""> -->
-        <div class="banner-text">
-            <h1>T&T GROUP</h1>
-            <p>Vì một cộng đồng người Việt vững mạnh</p>
-            <div class="banner-btn">
-                <a data-scroll href="#feature"><span></span>Xem thêm</a>
+    <div id="app">
+        <section id="header" class="menu-bg">
+            <img src="img/logo6.png" class="logo" alt="">
+            <div class="lang-select">
+                <button class="lang-btn lang-selected" data-lang="vn">VN</button>
+                <span></span>
+                <button class="lang-btn" data-lang="jp">JP</button>
             </div>
-        </div>
-    </section>
-    <!-- Features -->
-    <section id="feature">
-        <div class="title-text">
-            <p>FEATURES</p>
-            <h1>Lý do bạn chọn chúng tôi</h1>
-        </div>
-        <div class="feature-box">
-            <div class="features">
-                <h1>Sản phẩm chất lượng</h1>
-                <div class="features-desc">
-                    <div class="features-icon">
-                        <i class="fa fa-check"></i>
-                    </div>
-                    <div class="features-text">
-                        <p>T&T GROUP cam kết sản phẩm chính hãng, uy tín, đa dạng và phong phú</p>
-                    </div>
-                </div>
-                <!-- -->
-                <h1>Giá cả cạnh tranh</h1>
-                <div class="features-desc">
-                    <div class="features-icon">
-                        <i class="fa fa-jpy"></i>
-                    </div>
-                    <div class="features-text">
-                        <p>T&T GROUP mang đến cho bạn mức giá tốt nhất, phù hợp với mọi khách hàng</p>
-                    </div>
-                </div>
-                <!-- -->
-                <h1>Tư vấn nhiệt tình</h1>
-                <div class="features-desc">
-                    <div class="features-icon">
-                        <i class="fa"><img src="img/icon-operator1.png" alt=""></i>
-                    </div>
-                    <div class="features-text">
-                        <p>Chúng tôi luôn sẵn sàng tư vấn cũng như hỗ trợ, giải đáp mọi thắc mắc từ khách hàng</p>
-                    </div>
-                </div>
-                <!-- -->
-                <h1>Khuyến mãi ưu đãi</h1>
-                <div class="features-desc">
-                    <div class="features-icon">
-                        <i class="fa fa-gift"></i>
-                    </div>
-                    <div class="features-text">
-                        <p>T&T GROUP có khuyến mãi lớn cho khách hàng thường xuyên sử dụng dịch vụ.</p>
-                    </div>
-                </div>
-                <!-- -->
-            </div>
-            <div class="features-img">
-                <img src="img/teamwork.webp" alt="">
-            </div>
-        </div>
-    </section>
-
-    <!-- Dich vu -->
-
-    <section id="service">
-        <div class="title-text">
-            <p>SERVICES</p>
-            <h1>Chúng tôi luôn cung cấp dịch vụ tốt nhất</h1>
-        </div>
-        <div class="service-box">
-            <div class="single-service">
-                <img src="img/service-wiless.jpg" alt="">
-                <div class="overlay"></div>
-                <div class="service-desc">
-                    <h3>Wifi toc do cao</h3>
-                    <hr>
-                    <p>Tốc độ mạng 1000mbps mang đến cho bạn đường truyền chất lượng rất ổn định, vượt mong đợi của
-                        khách hàng</p>
+            <nav class="vg-nav vg-nav-md">
+                <ul>
+                    <li class="active">
+                        <a href="index.html">Trang chủ</a>
+                    </li>
+                    <li class="dropdown">
+                        <a>Dịch vụ</a>
+                        <ul>
+                            <li><a href="services-01.html">Wifi cố định</a></li>
+                            <li><a href="services-02.html">Sim nghe gọi và data</a></li>
+                            <li><a href="services-03.html">Xúc tiến TMĐT và Du lịch</a></li>
+                            <li class="dropdown">
+                                <a>Tư vấn du học</a>
+                                <ul class="left">
+                                    <li><a href="services-041.html">Du học Nhật Bản</a></li>
+                                    <li><a href="services-04.html">Du học Hàn Quốc</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="services-05.html">Giới thiệu việc làm</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a>Công ty</a>
+                        <ul>
+                            <li><a href="company.html">Thông tin công ty</a></li>
+                            <li><a href="company-message.html">Thư ngỏ</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="careers.html">Tuyển dụng</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Liên hệ</a>
+                    </li>
+                    <!-- <li><a href="login.html">Login</a></li>
+                    <li class="dropdown active">
+                        <a><i class="fa-solid fa-circle-user"></i></a>
+                        <ul>
+                            <li class="active"><a href="/profile">Trang cá nhân</a></li>
+                            <li><a href="login.html">Đăng xuất</a></li>
+                        </ul>
+                    </li> -->
+                </ul>
+            </nav>
+        </section>
+        <section id="banner">
+            <div class="banner-text">
+                <h1>T&T GROUP</h1>
+                <p>Vì một cộng đồng người Việt vững mạnh</p>
+                <div class="banner-btn">
+                    <a data-scroll href="#feature"><span></span>Xem thêm</a>
                 </div>
             </div>
-            <div class="single-service">
-                <img src="img/service-sim.jpg" alt="">
-                <div class="overlay"></div>
-                <div class="service-desc">
-                    <h3>SIM data</h3>
-                    <hr>
-                    <p>SIM data bán đứt thanh toán theo tháng rất tiện lợi, không phải mất chi phí lớn để có data mọi
-                        lúc mọi nơi</p>
+        </section>
+        <!-- Features -->
+        <section id="feature">
+            <div class="title-text">
+                <p>FEATURES</p>
+                <h1>Lý do bạn chọn chúng tôi</h1>
+            </div>
+            <div class="feature-box">
+                <div class="features">
+                    <h1>Sản phẩm chất lượng</h1>
+                    <div class="features-desc">
+                        <div class="features-icon">
+                            <i class="fa fa-check"></i>
+                        </div>
+                        <div class="features-text">
+                            <p>T&T GROUP cam kết sản phẩm chính hãng, uy tín, đa dạng và phong phú</p>
+                        </div>
+                    </div>
+                    <!-- -->
+                    <h1>Giá cả cạnh tranh</h1>
+                    <div class="features-desc">
+                        <div class="features-icon">
+                            <i class="fa fa-jpy"></i>
+                        </div>
+                        <div class="features-text">
+                            <p>T&T GROUP mang đến cho bạn mức giá tốt nhất, phù hợp với mọi khách hàng</p>
+                        </div>
+                    </div>
+                    <!-- -->
+                    <h1>Tư vấn nhiệt tình</h1>
+                    <div class="features-desc">
+                        <div class="features-icon">
+                            <i class="fa"><img src="img/icon-operator1.png" alt=""></i>
+                        </div>
+                        <div class="features-text">
+                            <p>Chúng tôi luôn sẵn sàng tư vấn cũng như hỗ trợ, giải đáp mọi thắc mắc từ khách hàng</p>
+                        </div>
+                    </div>
+                    <!-- -->
+                    <h1>Khuyến mãi ưu đãi</h1>
+                    <div class="features-desc">
+                        <div class="features-icon">
+                            <i class="fa fa-gift"></i>
+                        </div>
+                        <div class="features-text">
+                            <p>T&T GROUP có khuyến mãi lớn cho khách hàng thường xuyên sử dụng dịch vụ.</p>
+                        </div>
+                    </div>
+                    <!-- -->
+                </div>
+                <div class="features-img">
+                    <img src="img/teamwork.webp" alt="">
                 </div>
             </div>
-            <div class="single-service">
-                <img src="img/service-study-abroad.jpg" alt="">
-                <div class="overlay"></div>
-                <div class="service-desc">
-                    <h3>Tư vấn du học</h3>
-                    <hr>
-                    <p>Tại các sự kiện triển lãm du học của chúng tôi, bạn có thể gặp gỡ với đại diện trường và trao đổi
-                        trực tiếp về triển vọng học tập, cơ hội nghề nghiệp trong tương lai.</p>
-                </div>
-            </div>
-            <div class="single-service">
-                <img src="img/service-job.jfif" alt="">
-                <div class="overlay"></div>
-                <div class="service-desc">
-                    <h3>Giới thiệu việc làm</h3>
-                    <hr>
-                    <p>SIM data bán đứt thanh toán theo tháng rất tiện lợi, không phải mất chi phí lớn để có data mọi
-                        lúc mọi nơi</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- testimonial -->
-    <section id="testimonial">
-        <div class="title-text">
-            <p>TESTIMONIAL</p>
-            <h1>Khách hàng nói gì về chúng tôi</h1>
-        </div>
-        <div class="testimonial-row">
-            <div class="testimonial-col">
-                <div class="user">
-                    <img src="img/user-01.jpg" alt="">
-                    <div class="user-info">
-                        <h4>Nam Phong<i class="fa fa-brands fa-facebook-square"></i></h4>
-                        <small>Du học sinh</small>
+        <!-- Dich vu -->
+
+        <section id="service">
+            <div class="title-text">
+                <p>SERVICES</p>
+                <h1>Chúng tôi luôn cung cấp dịch vụ tốt nhất</h1>
+            </div>
+            <div class="service-box">
+                <div class="single-service">
+                    <img src="img/service-wiless.jpg" alt="">
+                    <a class="overlay" href="services-01.html"></a>
+                    <div class="service-desc">
+                        <h3>Wifi tốc độ cao</h3>
+                        <hr>
+                        <p>Tốc độ mạng 1000mbps mang đến cho bạn đường truyền chất lượng rất ổn định, vượt mong đợi của
+                            khách hàng</p>
                     </div>
                 </div>
-                <p>Tôi đã sử dụng dịch vụ sim Docomo tại T&T GROUP, chất lượng sim rất tốt, nhân viên tư vấn rất nhiệt
-                    tình, ship hàng tận nơi. Tôi sẽ giới thiệu thêm bạn bè.</p>
-            </div>
-            <div class="testimonial-col">
-                <div class="user">
-                    <img src="img/user-02.webp" alt="">
-                    <div class="user-info">
-                        <h4>Gia Huy<i class="fa fa-brands fa-facebook-square"></i></h4>
-                        <small>Thực tập sinh tại Nhật</small>
+                <div class="single-service">
+                    <img src="img/sim3.webp" alt="">
+                    <a class="overlay" href="services-02.html"></a>
+                    <div class="service-desc">
+                        <h3>SIM data ta bán đứt thanh toán theo tháng rất tiện lợi, không phải mất chta bán đứt thanh
+                            toán theo tháng rất tiện lợi, không phải mất ch</h3>
+                        <hr>
+                        <p>SIM data bán đứt thanh toán theo tháng rất tiện lợi, không phải mất chi phí lớn để có data
+                            mọi
+                            lúc mọi nơi</p>
                     </div>
                 </div>
-                <p>Tôi tìm được thông tin về wifi cố định của T&T GROUP trên Facebook, chất lượng wifi rất tốt, giá cả
-                    phải chăng, nhân viên giải đáp các thắc mắc của tôi nhanh chóng.</p>
-            </div>
-            <div class="testimonial-col">
-                <div class="user">
-                    <img src="img/user-03.jpg" alt="">
-                    <div class="user-info">
-                        <h4>Mỹ Uyên<i class="fa fa-brands fa-facebook-square"></i></h4>
-                        <small>Diện Kỹ sư tại Nhật</small>
+                <div class="single-service">
+                    <img src="img/nhat.webp" alt="">
+                    <a class="overlay" href="services-041.html"></a>
+                    <div class="service-desc">
+                        <h3>Tư vấn du học Nhật Bản</h3>
+                        <hr>
+                        <p>Tại các sự kiện triển lãm du học của chúng tôi, bạn có thể gặp gỡ với đại diện trường và trao
+                            đổi
+                            trực tiếp về triển vọng học tập, cơ hội nghề nghiệp trong tương lai.</p>
                     </div>
                 </div>
-                <p>Tôi mới sang Nhật cách đây mấy tháng, tôi lo lắng không biết nên dùng sim DATA như thế nào để hợp lý
-                    gọi về nhà. Cũng may nhờ T&T GROUP tư vấn nhiệt tình cho tôi.</p>
+
+                <div class="single-service">
+                    <img src="img/han.webp" alt="">
+                    <a class="overlay" href="services-04.html"></a>
+                    <div class="service-desc">
+                        <h3>Tư vấn du học Hàn Quốc</h3>
+                        <hr>
+                        <p>Tại các sự kiện triển lãm du học của chúng tôi, bạn có thể gặp gỡ với đại diện trường và trao
+                            đổi
+                            trực tiếp về triển vọng học tập, cơ hội nghề nghiệp trong tương lai.</p>
+                    </div>
+                </div>
+                <div class="single-service">
+                    <img src="img/job.webp" alt="">
+                    <a class="overlay" href="services-05.html"></a>
+                    <div class="service-desc">
+                        <h3>Giới thiệu việc làm</h3>
+                        <hr>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum quaerat ea, assumenda
+                            consequuntur veritatis exercitationem alias vel sint quasi error. Vitae adipisci fugit
+                            quibusdam. Suscipit consectetur ex distinctio qui ipsum.</p>
+                    </div>
+                </div>
+                <div class="single-service">
+                    <img src="img/dulic.webp" alt="">
+                    <a class="overlay" href="services-03.html"></a>
+                    <div class="service-desc">
+                        <h3>Xúc tiến thương mại đầu tư và du lịch</h3>
+                        <hr>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim numquam aut eligendi
+                            temporibus iure rem dolorem officiis, suscipit animi, quidem id dolor consectetur blanditiis
+                            cumque fuga magnam, harum ea ullam. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Ipsam saepe dolorem autem aut possimus doloribus, culpa recusandae? Iste assumenda placeat,
+                            sint quae aspernatur perspiciatis cupiditate repellat autem, accusantium laborum voluptate?
+                        </p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- footer -->
-    <section id="footer">
-        <img class="footer-img" src="img/logo1.png" alt="">
-        <div class="title-text">
-            <p>CONTACT</p>
-            <h1>Liên hệ với chúng tôi</h1>
-        </div>
-        <div class="footer-row">
-            <div class="footer-left">
-                <h1>Giờ mở cửa</h1>
-                <p><i class="fa fa-solid fa-clock"></i>Thứ 2 - Thứ 6 : 9:00 - 18:00</p>
-                <p><i class="fa fa-solid fa-clock"></i>Thứ 7, Chủ Nhật, Ngày Lễ : Nghỉ</p>
+        <!-- testimonial -->
+        <section id="testimonial">
+            <div class="title-text">
+                <p>TESTIMONIAL</p>
+                <h1>Khách hàng nói gì về chúng tôi</h1>
             </div>
-            <div class="footer-right">
-                <h1>Địa chỉ:</h1>
-                <p>〒116-0014 東京都荒川区東日暮里5-45-12いかるがビル502<i class="fa fa-map-marker"></i></p>
-                <p>ttgroupjp062022@gmail.com<i class="fa fa-paper-plane"></i></p>
-                <p>03-5604-5026<i class="fa fa-phone"></i></p>
-                <p>03-5604-5026<i class="fa fa-fax"></i></p>
-                <p>090-5693-6688<i class="fa fa-mobile"></i></p>
+            <div class="testimonial-row">
+                <div class="testimonial-col">
+                    <div class="user">
+                        <img src="img/user-01.jpg" alt="">
+                        <div class="user-info">
+                            <h4>Nam Phong<i class="fa fa-brands fa-facebook-square"></i></h4>
+                            <small>Du học sinh</small>
+                        </div>
+                    </div>
+                    <p>Tôi đã sử dụng dịch vụ sim Docomo tại T&T GROUP, chất lượng sim rất tốt, nhân viên tư vấn rất
+                        nhiệt
+                        tình, ship hàng tận nơi. Tôi sẽ giới thiệu thêm bạn bè.</p>
+                </div>
+                <div class="testimonial-col">
+                    <div class="user">
+                        <img src="img/user-02.webp" alt="">
+                        <div class="user-info">
+                            <h4>Gia Huy<i class="fa fa-brands fa-facebook-square"></i></h4>
+                            <small>Thực tập sinh tại Nhật</small>
+                        </div>
+                    </div>
+                    <p>Tôi tìm được thông tin về wifi cố định của T&T GROUP trên Facebook, chất lượng wifi rất tốt, giá
+                        cả
+                        phải chăng, nhân viên giải đáp các thắc mắc của tôi nhanh chóng.</p>
+                </div>
+                <div class="testimonial-col">
+                    <div class="user">
+                        <img src="img/user-03.jpg" alt="">
+                        <div class="user-info">
+                            <h4>Mỹ Uyên<i class="fa fa-brands fa-facebook-square"></i></h4>
+                            <small>Diện Kỹ sư tại Nhật</small>
+                        </div>
+                    </div>
+                    <p>Tôi mới sang Nhật cách đây mấy tháng, tôi lo lắng không biết nên dùng sim DATA như thế nào để hợp
+                        lý
+                        gọi về nhà. Cũng may nhờ T&T GROUP tư vấn nhiệt tình cho tôi.</p>
+                </div>
             </div>
-        </div>
-        <div class="social-links">
-            <a href="https://www.facebook.com/taygiagiawifi"><img src="img/icon-facebook.png" alt=""></a>
-            <a href="https://line.me/ja/"><img src="img/icon-line.png" alt=""></a>
-            <a href="https://zalo.me/819056936688"><img src="img/icon-zalo.png" alt=""></a>
-            <p>Bản quyền thuộc về T&T GROUP</p>
-        </div>
-    </section>
-    <!-- Back to top button -->
-    <button id="toTopBtn"></button>
+        </section>
 
-    <script type="text/javascript">
-        // xem them
-        var scroll = new SmoothScroll('a[href*="#"]', {
-            speed: 1000,
-            speedAsDuration: true
-        });
+        <!-- footer -->
+        <section id="footer">
+            <img class="footer-img" src="img/logo6.png" alt="">
+            <div class="title-text">
+                <p>CONTACT</p>
+                <h1>Liên hệ với chúng tôi</h1>
+            </div>
+            <div class="footer-row">
+                <div class="footer-left">
+                    <h1>Giờ mở cửa</h1>
+                    <p><i class="fa fa-solid fa-clock"></i>Thứ 2 - Thứ 6 : 9:00 - 18:00</p>
+                    <p><i class="fa fa-solid fa-clock"></i>Thứ 7, Chủ Nhật, Ngày Lễ : Nghỉ</p>
+                </div>
+                <div class="footer-right">
+                    <h1>Địa chỉ:</h1>
+                    <p>〒116-0014 東京都荒川区東日暮里5-45-12いかるがビル502<i class="fa fa-map-marker"></i></p>
+                    <p>ttgroupjp062022@gmail.com<i class="fa fa-paper-plane"></i></p>
+                    <p>03-5604-5026<i class="fa fa-phone"></i></p>
+                    <p>03-5604-5026<i class="fa fa-fax"></i></p>
+                    <p>090-5693-6688<i class="fa fa-mobile"></i></p>
+                </div>
+            </div>
+            <div class="footer-social">
+                <div class="social-links">
+                    <img src="img/qr-fb.png" alt="Facebook">
+                    <img src="img/qr-zalo.png" alt="Zalo">
+                    <img src="img/qr-line.png" alt="Line">
+                    <img src="img/qr-wechat.png" alt="Wechat">
+                </div>
+                <p>Bản quyền © 2025 T&T Group</p>
+            </div>
+        </section>
+        <!-- Back to top button -->
+        <button id="toTopBtn"></button>
 
-        // scroll out of banner, background color of menu
-        // will be changed
-        var viewportHeight = window.innerHeight;
-        var nav = document.getElementById('header');
-        var navHeight = nav.offsetHeight;
+        <script type="text/javascript">
 
-        window.onscroll = function () {
-
-            if (window.pageYOffset > (viewportHeight - navHeight)) {
-
-                nav.style.background = "#e43d12";
-                nav.style.boxShadow = "0px 4px 4px #e6e5e5";
-            }
-            else {
-                nav.style.background = "transparent";
-                nav.style.boxShadow = "none";
-            }
-        }
-
-        // back to top button
-        var btn = document.getElementById('toTopBtn');
-
-        window.addEventListener('scroll', function (event) {
-            if (window.scrollY > 300) {
-                btn.classList.add("show");
-            } else {
-                btn.classList.remove("show");
-            }
-        });
-        btn.onclick = function (e) {
-            e.preventDefault();
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth",
+            // xem them
+            var scroll = new SmoothScroll('a[href*="#"]', {
+                speed: 1000,
+                speedAsDuration: true
             });
-        };
 
-    </script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh"
-        crossorigin="anonymous"></script>
-    <script src="vgnav.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('.vg-nav').vegasMenu();
-        })
-    </script>
+            // back to top button
+            var btn = document.getElementById('toTopBtn');
+
+            window.addEventListener('scroll', function (event) {
+                if (window.scrollY > 300) {
+                    btn.classList.add("show");
+                } else {
+                    btn.classList.remove("show");
+                }
+            });
+            btn.onclick = function (e) {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth",
+                });
+            };
+
+        </script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh"
+            crossorigin="anonymous"></script>
+        <script src="nav.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('.vg-nav').vegasMenu();
+            })
+        </script>
+    </div>
 </body>
 
 </html>

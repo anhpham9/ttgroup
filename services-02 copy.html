@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>サービス：通話・データSIM</title>
+    <title>Dịch vụ Sim nghe gọi và data</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -18,29 +18,53 @@
 <body>
     <section id="header" class="menu-bg">
         <img src="img/logo6.png" class="logo" alt="">
+        <div class="lang-select">
+            <button class="lang-btn lang-selected" data-lang="vn">VN</button>
+            <span></span>
+            <button class="lang-btn" data-lang="jp">JP</button>
+        </div>
         <nav class="vg-nav vg-nav-md">
             <ul>
                 <li>
-                    <a href="index.html">ホームページ</a>
+                    <a href="index.html">Trang chủ</a>
                 </li>
                 <li class="dropdown active">
-                    <a>サービス</a>
+                    <a>Dịch vụ</a>
                     <ul>
-                        <li><a href="services-01.html">固定Wi-Fi</a></li>
-                        <li class="active"><a href="services-02.html">通話とデータのSIMカード</a></li>
-                        <li><a href="services-03.html">日本留学</a></li>
+                        <li><a href="services-01.html">Wifi cố định</a></li>
+                        <li class="active"><a href="services-02.html">Sim nghe gọi và data</a></li>
+                        <li><a href="services-03.html">Xúc tiến TMĐT và Du lịch</a></li>
+                        <li class="dropdown">
+                            <a>Tư vấn du học</a>
+                            <ul class="left">
+                                <li><a href="services-041.html">Du học Nhật Bản</a></li>
+                                <li><a href="services-04.html">Du học Hàn Quốc</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="services-05.html">Giới thiệu việc làm</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a>企業情報</a>
+                    <a>Công ty</a>
                     <ul>
-                        <li><a href="company-message.html">代表メッセージ</a></li>
-                        <li><a href="company.html">会社概要</a></li>
+                        <li><a href="company.html">Thông tin công ty</a></li>
+                        <li><a href="company-message.html">Thư ngỏ</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="contact.html">お問い合わせ</a>
+                    <a href="careers.html">Tuyển dụng</a>
                 </li>
+                <li>
+                    <a href="contact.html">Liên hệ</a>
+                </li>
+                <!-- <li><a href="login.html">Login</a></li>
+                <li class="dropdown active">
+                    <a><i class="fa-solid fa-circle-user"></i></a>
+                    <ul>
+                        <li class="active"><a href="/profile">Trang cá nhân</a></li>
+                        <li><a href="login.html">Đăng xuất</a></li>
+                    </ul>
+                </li> -->
             </ul>
         </nav>
     </section>
@@ -50,29 +74,29 @@
             <h1>
                 <i class="fa fa-home" aria-hidden="true"></i>
                 <i class="fa fa-angle-right" aria-hidden="true"></i>
-                <i class="fa fa-suitcase" aria-hidden="true"></i>サービス
+                <i class="fa fa-suitcase" aria-hidden="true"></i>Dịch vụ
                 <i class="fa fa-angle-right" aria-hidden="true"></i>
-                <i class="fa-solid fa-sim-card"></i>通話・データSIM 
+                <i class="fa-solid fa-sim-card"></i>Sim data nghe gọi
             </h1>
         </div>
     </section>
     <section id="services">
         <div class="services-box">
             <div class="service-row">
-                <h2>ソフトバンクの月額制SIMカード</h2>
+                <h2>SIM SOFBANK THEO THÁNG</h2>
                 <div class="service-content">
-                    <h3>パートナー向けのソフトバンクの月額制SIMカードの価格</h3>
+                    <h3>GIÁ SIM SOFBANK THEO THÁNG CTV</h3>
 
                     <div class="table-container">
                         <table class="styled-table">
                             <thead>
                                 <tr>
-                                    <th>データ容量</th>
-                                    <th>料金</th>
-                                    <th>1日 - 6日</th>
-                                    <th>7日 - 14日</th>
-                                    <th>15日 - 20日</th>
-                                    <th>21日 - 30日</th>
+                                    <th>DUNG LƯỢNG</th>
+                                    <th>Cước</th>
+                                    <th>Ngày 1 - 6</th>
+                                    <th>Ngày 7 - 14</th>
+                                    <th>Ngày 15 - 20</th>
+                                    <th>Ngày 21 - 30</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -104,96 +128,98 @@
                         </table>
                     </div>
                     <div class="red-p">
-                        <h3>注意事項：</h3>
-                        <p>&nbsp;&nbsp;・15日以降のお支払いには、翌月分の料金が含まれております。</p>
-                        <p>&nbsp;&nbsp;・6か月未満で解約した場合は1,000円の手数料がかかります。</p>
-                        <p>&nbsp;&nbsp;・3か月未満で解約した場合は2,000円の手数料がかかります。</p>
+                        <h3>Lưu ý:</h3>
+                        <p>&nbsp;&nbsp;・phí từ ngày15 đã có cước của tháng sau</p>
+                        <p>&nbsp;&nbsp;・hủy dưới 6 tháng mất 1.000</p>
+                        <p>&nbsp;&nbsp;・hủy dưới 3 thnags mất 2.000</p>
                     </div>
-                    <a class="now" href="https://www.facebook.com/taygiagiawifi" target="_blank" rel="noopener noreferrer">今すぐお問い合わせ</a>
+                    <a class="now" href="https://www.facebook.com/taygiagiawifi" target="_blank" rel="noopener noreferrer">Liên Hệ
+                        Ngay</a>
                 </div>
             </div>
             <div class="service-row">
-                <h2>ソフトバンクの買い切り型データSIM</h2>
+                <h2>SIM SOFBANK BÁN ĐỨT</h2>
                 <div class="service-content">
-                    <h3>パートナー向けのソフトバンクの買い切り型データSIMの価格</h3>
+                    <h3>GIÁ SIM SOFBANK BÁN ĐỨT CTV</h3>
 
                     <div class="table-container">
                         <table class="styled-table">
                             <thead>
                                 <tr>
-                                    <th>データ容量</th>
-                                    <th>6ヶ月</th>
-                                    <th>1年間</th>
+                                    <th>DUNG LƯỢNG</th>
+                                    <th>6 THÁNG</th>
+                                    <th>1 NĂM</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>SoftBank 1-2GB SIM (SMS受信可)</td>
-                                    <td>-</td>
+                                    <td>Sim 1-2GB SB nhận dk SMS</td>
+                                    <td>0 có</td>
                                     <td>4.500¥</td>
                                 </tr>
                                 <tr>
-                                    <td>SoftBank 5-6GB SIM (SMS受信可)</td>
-                                    <td>-</td>
+                                    <td>Sim 5-6GB SB nhận dk SMS</td>
+                                    <td>0 có</td>
                                     <td>8.500¥</td>
                                 </tr>
                                 <tr>
-                                    <td>SoftBank 10GB SIM (SMS受信可)</td>
-                                    <td>-</td>
+                                    <td>Sim 10GB SB nhận dk SMS</td>
+                                    <td>0 có</td>
                                     <td>14.500¥</td>
                                 </tr>
                                 <tr>
-                                    <td>DOCOMO 3-4GB SIM (SMS受信不可)</td>
-                                    <td>-</td>
+                                    <td>SIM 3-4GB dokomo k nhận dk SMS </td>
+                                    <td>0 có</td>
                                     <td>6.500¥</td>
                                 </tr>
                                 <tr>
-                                    <td>RAKUTEN 3-4GB SIM</td>
-                                    <td>-</td>
+                                    <td>SIM RAKUTEN 3-4GB</td>
+                                    <td>0 có</td>
                                     <td>7.000¥</td>
                                 </tr>
                                 <tr>
-                                    <td>RAKUTEN 7-8GB SIM</td>
-                                    <td>-</td>
+                                    <td>SIM RAKUTEN 7-8 GB</td>
+                                    <td>0 có</td>
                                     <td>9.000¥</td>
                                 </tr>
                                 <tr>
-                                    <td>SoftBank 30GB SIM/月</td>
+                                    <td>SIM 30Gb/tháng SB</td>
                                     <td>14.500¥</td>
                                     <td>25.000¥</td>
                                 </tr>
                                 <tr>
-                                    <td>SoftBank 50Gb SIM/月</td>
+                                    <td>SIM 50Gb/Tháng SB</td>
                                     <td>18.500¥</td>
                                     <td>29.000¥</td>
                                 </tr>
                                 <tr>
-                                    <td>SoftBank 100Gb SIM/月</td>
+                                    <td>SIM 100Gb/Tháng SB</td>
                                     <td>22.500¥</td>
                                     <td>35.000¥</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
-                    <a class="now" href="https://www.facebook.com/taygiagiawifi" target="_blank" rel="noopener noreferrer">今すぐお問い合わせ</a>
+                    <a class="now" href="https://www.facebook.com/taygiagiawifi" target="_blank" rel="noopener noreferrer">Liên Hệ
+                        Ngay</a>
                 </div>
             </div>
             <div class="service-row">
-                <h2>Docomo 通話SIMカード</h2>
+                <h2>SIM NGHE GỌI DOKOMO</h2>
                 <div class="service-content">
-                    <h3>パートナー向けのDocomo 通話SIMカードの価格</h3>
+                    <h3>GIÁ SIM NGHE GỌI DOKOMO CTV</h3>
 
                     <div class="table-container">
                         <table class="styled-table">
                             <thead>
                                 <tr>
-                                    <th>データ容量</th>
-                                    <th>月額プラン</th>
-                                    <th>SIMカード本体</th>
-                                    <th>かけ放題プラン</th>
-                                    <th>国内SMS料金</th>
-                                    <th>国際SMS料金</th>
-                                    <th>通話料金（かけ放題ではない）</th>
+                                    <th>DUNG LƯỢNG</th>
+                                    <th>HÀNG THÁNG</th>
+                                    <th>PHÔI SIM</th>
+                                    <th>GỌI HODAI</th>
+                                    <th>PHÍ SMS NỘI ĐỊA</th>
+                                    <th>PHÍ SMS QUỐC TẾ</th>
+                                    <th>PHÍ GỌI (KHÔNG HODAI)</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -202,8 +228,8 @@
                                     <td>900¥</td>
                                     <td>1.000¥</td>
                                     <td>5p/1.000¥</td>
-                                    <td>5¥/SMS</td>
-                                    <td>100¥/SMS</td>
+                                    <td>5¥/tin</td>
+                                    <td>100¥/tin</td>
                                     <td>40¥/p</td>
                                 </tr>
                                 <tr>
@@ -211,8 +237,8 @@
                                     <td>2.350¥</td>
                                     <td>1.500¥</td>
                                     <td>10p/1.500¥</td>
-                                    <td>5¥/SMS</td>
-                                    <td>100¥/SMS</td>
+                                    <td>5¥/tin</td>
+                                    <td>100¥/tin</td>
                                     <td>40¥/p</td>
                                 </tr>
                                 <tr>
@@ -220,20 +246,21 @@
                                     <td>3.800¥</td>
                                     <td>1.500¥</td>
                                     <td> - </td>
-                                    <td>5¥/SMS</td>
-                                    <td>100¥/SMS</td>
+                                    <td>5¥/tin</td>
+                                    <td>100¥/tin</td>
                                     <td>40¥/p</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                     <div class="red-p">
-                        <h3>注意事項：</h3>
-                        <p>&nbsp;&nbsp;・SIMカードには顧客情報が必要です:</p>
-                        <p>&nbsp;&nbsp;&nbsp;&nbsp;・外国人カード（両面）</p>
-                        <p>&nbsp;&nbsp;&nbsp;&nbsp;・パスポート</p>
+                        <h3>Lưu ý:</h3>
+                        <p>&nbsp;&nbsp;・SIM cần Thông tin khách hàng:</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;・Thẻ ngoại kiều 2 mặt</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;・Hộ chiếu</p>
                     </div>
-                    <a class="now" href="https://www.facebook.com/taygiagiawifi" target="_blank" rel="noopener noreferrer">今すぐお問い合わせ</a>
+                    <a class="now" href="https://www.facebook.com/taygiagiawifi" target="_blank" rel="noopener noreferrer">Liên Hệ
+                        Ngay</a>
                 </div>
             </div>
             <div class="service-row">
@@ -253,9 +280,11 @@
         <hr>
         <div class="footerc-row">
             <ul>
-                <li><a href="privacy.html">プライバシーポリシー</a></li>
+                <li><a href="privacy.html">Chính sách trang web</a></li>
+                <li><a href="privacy.html">Chính sách bảo mật thông tin cá nhân</a></li>
+
             </ul>
-            <p>著作権 © 2025 T&T Group</p>
+            <p>Bản quyền © 2025 T&T Group</p>
         </div>
     </section>
     <!-- Back to top button -->
