@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>会社概要</title>
+    <title>Về công ty</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -18,29 +18,53 @@
 <body>
     <section id="header" class="menu-bg">
         <img src="img/logo6.png" class="logo" alt="">
+        <div class="lang-select">
+            <button class="lang-btn lang-selected" data-lang="vn">VN</button>
+            <span></span>
+            <button class="lang-btn" data-lang="jp">JP</button>
+        </div>
         <nav class="vg-nav vg-nav-md">
             <ul>
                 <li>
-                    <a href="index.html">ホームページ</a>
+                    <a href="index.html">Trang chủ</a>
                 </li>
                 <li class="dropdown">
-                    <a>サービス</a>
+                    <a>Dịch vụ</a>
                     <ul>
-                        <li><a href="services-01.html">固定Wi-Fi</a></li>
-                        <li><a href="services-02.html">通話とデータのSIMカード</a></li>
-                        <li><a href="services-03.html">日本留学</a></li>
+                        <li><a href="services-01.html">Wifi cố định</a></li>
+                        <li><a href="services-02.html">Sim nghe gọi và data</a></li>
+                        <li><a href="services-03.html">Xúc tiến TMĐT và Du lịch</a></li>
+                        <li class="dropdown">
+                            <a>Tư vấn du học</a>
+                            <ul class="left">
+                                <li><a href="services-041.html">Du học Nhật Bản</a></li>
+                                <li><a href="services-04.html">Du học Hàn Quốc</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="services-05.html">Giới thiệu việc làm</a></li>
                     </ul>
                 </li>
                 <li class="dropdown active">
-                    <a>企業情報</a>
+                    <a>Công ty</a>
                     <ul>
-                        <li><a href="company-message.html">代表メッセージ</a></li>
-                        <li class="active"><a href="company.html">会社概要</a></li>
+                        <li class="active"><a href="company.html">Thông tin công ty</a></li>
+                        <li><a href="company-message.html">Thư ngỏ</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="contact.html">お問い合わせ</a>
+                    <a href="careers.html">Tuyển dụng</a>
                 </li>
+                <li>
+                    <a href="contact.html">Liên hệ</a>
+                </li>
+                <!-- <li><a href="login.html">Login</a></li>
+                <li class="dropdown active">
+                    <a><i class="fa-solid fa-circle-user"></i></a>
+                    <ul>
+                        <li class="active"><a href="/profile">Trang cá nhân</a></li>
+                        <li><a href="login.html">Đăng xuất</a></li>
+                    </ul>
+                </li> -->
             </ul>
         </nav>
     </section>
@@ -51,7 +75,7 @@
                 <i class="fa fa-home" aria-hidden="true"></i>
                 
                 <i class="fa fa-angle-right" aria-hidden="true"></i>
-                <i class="fa fa-building" aria-hidden="true"></i>会社概要
+                <i class="fa fa-building" aria-hidden="true"></i>Giới thiệu về công ty
             </h1>
         </div>
     </section>
@@ -68,35 +92,19 @@
             </div>
             <div class="company-row">
                 <div class="col1">URL</div>
-                <div class="col2"><a href="https://ttgroup-global.com/">https://www.ttgroup-global.com</a></div>
-            </div>
-            <div class="company-row">
-                <div class="col1">創立</div>
-                <div class="col2">2022年04月28日</div>
-            </div>
-            <div class="company-row">
-                <div class="col1">資本金</div>
-                <div class="col2">500万円</div>
-            </div>
-            <div class="company-row">
-                <div class="col1">代表者</div>
-                <div class="col2">代表取締役社長 TRAN NGOC ANH （トラン・ゴク・アン）</div>
+                <div class="col2">https://www.ttgroup-global.com</div>
             </div>
             <div class="company-row">
                 <div class="col1">本社所在地</div>
                 <div class="col2">〒116-0014 東京都荒川区東日暮里５丁目４５−１２ いかるがビル</div>
             </div>
             <div class="company-row">
-                <div class="col1">電話番号</div>
-                <div class="col2">03-5604-5026</div>
+                <div class="col1">創立</div>
+                <div class="col2">2022年04月28日</div>
             </div>
             <div class="company-row">
-                <div class="col1">携帯電話</div>
-                <div class="col2">090-5693-6688</div>
-            </div>
-            <div class="company-row">
-                <div class="col1">EMAIL</div>
-                <div class="col2">ttgroupjp062022@gmail.com <br>ngocanh@ttgroup-global.com</div>
+                <div class="col1">代表者</div>
+                <div class="col2">代表取締役社長 TRAN NGOC ANH （トラン・ゴク・アン）</div>
             </div>
             <div class="company-row">
                 <div class="col1">事業内容</div>
@@ -124,9 +132,11 @@
         <hr>
         <div class="footerc-row">
             <ul>
-                <li><a href="privacy.html">プライバシーポリシー</a></li>
+                <li><a href="privacy.html">Chính sách trang web</a></li>
+                <li><a href="privacy.html">Chính sách bảo mật thông tin cá nhân</a></li>
+                
             </ul>
-            <p>著作権 © 2025 T&T Group</p>
+            <p>Bản quyền © 2025 T&T Group</p>
         </div>
     </section>
     <!-- Back to top button -->

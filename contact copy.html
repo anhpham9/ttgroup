@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>お問い合わせ</title>
+    <title>Liên hệ</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -18,29 +18,53 @@
 <body>
     <section id="header" class="menu-bg">
         <img src="img/logo6.png" class="logo" alt="">
+        <div class="lang-select">
+            <button class="lang-btn lang-selected" data-lang="vn">VN</button>
+            <span></span>
+            <button class="lang-btn" data-lang="jp">JP</button>
+        </div>
         <nav class="vg-nav vg-nav-md">
             <ul>
                 <li>
-                    <a href="index.html">ホームページ</a>
+                    <a href="index.html">Trang chủ</a>
                 </li>
                 <li class="dropdown">
-                    <a>サービス</a>
+                    <a>Dịch vụ</a>
                     <ul>
-                        <li><a href="services-01.html">固定Wi-Fi</a></li>
-                        <li><a href="services-02.html">通話とデータのSIMカード</a></li>
-                        <li><a href="services-03.html">日本留学</a></li>
+                        <li><a href="services-01.html">Wifi cố định</a></li>
+                        <li><a href="services-02.html">Sim nghe gọi và data</a></li>
+                        <li><a href="services-03.html">Xúc tiến TMĐT và Du lịch</a></li>
+                        <li class="dropdown">
+                            <a>Tư vấn du học</a>
+                            <ul class="left">
+                                <li><a href="services-041.html">Du học Nhật Bản</a></li>
+                                <li><a href="services-04.html">Du học Hàn Quốc</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="services-05.html">Giới thiệu việc làm</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a>企業情報</a>
+                    <a>Công ty</a>
                     <ul>
-                        <li><a href="company-message.html">代表メッセージ</a></li>
-                        <li><a href="company.html">会社概要</a></li>
+                        <li><a href="company.html">Thông tin công ty</a></li>
+                        <li><a href="company-message.html">Thư ngỏ</a></li>
                     </ul>
+                </li>
+                <li>
+                    <a href="careers.html">Tuyển dụng</a>
                 </li>
                 <li class="active">
-                    <a href="contact.html">お問い合わせ</a>
+                    <a href="contact.html">Liên hệ</a>
                 </li>
+                <!-- <li><a href="login.html">Login</a></li>
+                <li class="dropdown">
+                    <a><i class="fa-solid fa-circle-user"></i></a>
+                    <ul>
+                        <li class=""><a href="profile.html">Trang cá nhân</a></li>
+                        <li><a href="login.html">Đăng xuất</a></li>
+                    </ul>
+                </li> -->
             </ul>
         </nav>
     </section>
@@ -50,18 +74,17 @@
             <h1>
                 <i class="fa fa-home" aria-hidden="true"></i>
                 <i class="fa fa-angle-right" aria-hidden="true"></i>
-                <i class="fa fa-comments" aria-hidden="true"></i>お問い合わせ
+                <i class="fa fa-comments" aria-hidden="true"></i>Liên hệ với chúng tôi
             </h1>
         </div>
     </section>
     <section id="contact">
         <div class="contact-box">
             <div>
-                <h2>T&T Group株式会社</h2>
-                <p>住所：〒116-0014 東京都荒川区東日暮里５丁目４５−１２ いかるがビル</p>
-                <p>Email：ttgroupjp062022@gmail.com / ngocanh@ttgroup-global.com</p>
-                <p>電話番号：03-5604-5026</p>
-                <p>携帯電話：090-5693-6688</p>
+                <h2>T&T Group</h2>
+                <p>Địa chỉ: 日本、〒116-0014 東京都荒川区東日暮里５丁目４５−１２ いかるがビル</p>
+                <p>Email: ttgroupjp062022@gmail.com</p>
+                <p>Điện thoại: 03-5604-5026</p>
                 <p class="social-links">
                     <img src="img/qr-fb.png" alt="Facebook">
                     <img src="img/qr-zalo.png" alt="Zalo">
@@ -71,7 +94,7 @@
             </div>
 
             <div class="opening-hours">
-                <h2>営業時間</h2>
+                <h2>Giờ làm việc</h2>
                 <input type="checkbox" id="toggle-hours">
                 <label for="toggle-hours" class="toggle-label">
                     <span id="today-status"></span>
@@ -81,7 +104,54 @@
                 <div id="week-schedule"></div>
             </div>
 
-            
+            <input type="checkbox" id="show-contact">
+            <label for="show-contact" class="show-contact-label">
+                — <em>Xin hãy cho chúng tôi biết ý kiến của bạn</em>—
+            </label>
+            <form class="styled-contact-form">
+                <label for="lastName">Họ*</label>
+                <input type="text" id="lastName" name="lastName" required>
+                <label for="firstName">Tên*</label>
+                <input type="text" id="firstName" name="firstName" required>
+
+                <label for="email">Email*</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Số điện thoại</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="title">Tiêu đề*</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="message">Thông điệp*</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+
+                <div class="recaptcha-note">
+                    <p>＜Lưu ý khi gửi yêu cầu liên hệ＞</p>
+                    <p>・Phản hồi từ chúng tôi sẽ được gửi riêng đến từng khách hàng. Vui lòng không sao chép hoặc sử
+                        dụng lại
+                        toàn bộ hay một phần nội dung phản hồi vào mục đích khác.</p>
+
+                    <p>・Trong một số trường hợp, tùy theo nội dung liên hệ (ví dụ: giới thiệu sản phẩm hoặc dịch vụ từ
+                        phía
+                        khách hàng), chúng tôi có thể không phản hồi. Mong quý khách thông cảm.</p>
+
+                    <p>・Thông tin cá nhân mà quý khách nhập sẽ được sử dụng trong phạm vi cần thiết để phản hồi yêu cầu,
+                        liên
+                        lạc, gửi tài liệu và thực hiện các nghiệp vụ liên quan. Vui lòng đồng ý trước khi nhấn nút
+                        “Gửi”. <a href="privacy.html" target="_blank" rel="noopener noreferrer">Chính
+                            sách bảo mật thông tin cá nhân</a>.</p>
+                </div>
+
+                <div class="agree-privacy">
+                    <input type="checkbox" name="agree" id="agree">
+                    <label for="agree">Tôi đồng ý với chính sách bảo mật thông tin cá nhân</label>
+                </div>
+                <div class="form-buttons">
+                    <button type="submit" class="submit-btn"><span></span>— <em>Gửi</em> —</button>
+                    <button type="reset" class="cancel-btn">Hủy</button>
+                </div>
+            </form>
         </div>
     </section>
     <section id="maps">
@@ -96,16 +166,16 @@
 
         <script>
             const schedule = [
-                "休業",       // Chủ nhật
-                "09:00 ～ 18:00",  // Thứ 2
-                "09:00 ～ 18:00",  // Thứ 3
-                "09:00 ～ 18:00",  // Thứ 4
-                "09:00 ～ 18:00",  // Thứ 5
-                "09:00 ～ 18:00",  // Thứ 6
-                "休業"        // Thứ 7
+                "Đóng cửa",       // Chủ nhật
+                "09:00 – 18:00",  // Thứ 2
+                "09:00 – 18:00",  // Thứ 3
+                "09:00 – 18:00",  // Thứ 4
+                "09:00 – 18:00",  // Thứ 5
+                "09:00 – 18:00",  // Thứ 6
+                "Đóng cửa"        // Thứ 7
             ];
 
-            const weekdays = ["日曜日", "月曜日", "火曜日", "水曜日", "木曜日", "金曜日", "土曜日"];
+            const weekdays = ["CN", "Th 2", "Th 3", "Th 4", "Th 5", "Th 6", "Th 7"];
 
             // Gọi API ngày lễ Nhật Bản
             async function isHoliday(date) {
@@ -128,10 +198,10 @@
 
                 // --- Trạng thái hôm nay ---
                 let statusText = "";
-                if (holiday || schedule[dayIndex] === "休業") {
-                    statusText = "本日は休業日です" + (holiday ? " (祝日)" : "");
+                if (holiday || schedule[dayIndex] === "Đóng cửa") {
+                    statusText = "Hôm nay đóng cửa" + (holiday ? " (ngày lễ)" : "");
                 } else {
-                    statusText = `本日は ${schedule[dayIndex]}まで営業いたします。`;
+                    statusText = `Hôm nay mở cửa từ ${schedule[dayIndex]}`;
                 }
                 document.getElementById("today-status").textContent = statusText;
 
@@ -157,9 +227,11 @@
         <hr>
         <div class="footerc-row">
             <ul>
-                <li><a href="privacy.html">プライバシーポリシー</a></li>
+                <li><a href="privacy.html">Chính sách trang web</a></li>
+                <li><a href="privacy.html">Chính sách bảo mật thông tin cá nhân</a></li>
+                
             </ul>
-            <p>著作権 © 2025 T&T Group</p>
+            <p>Bản quyền © 2025 T&T Group</p>
         </div>
     </section>
     <!-- Back to top button -->
