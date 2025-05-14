@@ -61,7 +61,7 @@
             </div>
         </section>
         <!-- Features -->
-        <section id="feature">
+        <section id="feature" class="bg-gray">
             <div class="title-text">
                 <p>FEATURES</p>
                 <h1>当社が選ばれる理由</h1>
@@ -115,9 +115,37 @@
             </div>
         </section>
 
+        <!-- SPECIAL OFFER -->
+        <section id="offer">
+            <div class="title-text">
+                <p>SPECIAL OFFER</p>
+                <h1>夏のビッグセール開催中！</h1>
+            </div>
+            <div class="offer-box">
+                <div class="offers-img">
+                    <img src="img/pr.jpeg" alt="広告画像">
+                </div>
+                <div class="offers">
+                    <h3>今すぐお得なキャンペーンをゲットしよう！</h3>
+                    <div class="offers-desc">
+                        <p>日本で使える便利な 通話SIM・eSIM をお探しですか？</p>
+                        <p>今なら以下の特典をご用意しています：</p>
+                        <ul>
+                            <li>💰 格安SIM！簡単お申し込み</li>
+                            <li>📉 月額料金が20%オフ！</li>
+                            <li>🎁 今だけ500円分のクーポンプレゼント！</li>
+                        </ul>
+                        <p>安定した通信で、ネットも通話もストレスフリー！</p>
+                        <p>📞 今すぐ無料相談：03-5604-5026</p>
+                        <a href="https://www.facebook.com/taygiagiawifi" class="offer-btn">今すぐ相談する</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Dich vu -->
 
-        <section id="service">
+        <section id="service" class="bg-gray">
             <div class="title-text">
                 <p>SERVICES</p>
                 <h1>私たちは常に最高のサービスを提供します</h1>
@@ -194,7 +222,7 @@
         </section>
 
         <!-- footer -->
-        <section id="footer">
+        <section id="footer" class="bg-gray">
             <img class="footer-img" src="img/logo6.png" alt="">
             <div class="title-text">
                 <p>CONTACT</p>
@@ -263,6 +291,37 @@
             })
         </script>
     </div>
+    <div id="ad-popup" class="ad-popup">
+        <div class="ad-content">
+            <button class="close-btn" onclick="closeAd()">&times;</button>
+            <img class="ad-img" src="img/pr.jpeg" alt="Quảng cáo" />
+        </div>
+    </div>
+    <script>
+        function closeAd() {
+            document.getElementById('ad-popup').style.display = 'none';
+        }
+
+        // Tùy chọn: Tự động ẩn sau 10 giây
+        // setTimeout(closeAd, 10000);
+    </script>
+    <script>
+        function animateOnScroll() {
+            const elements = document.querySelectorAll('#offer .offers, #offer .offers-img');
+            elements.forEach(el => {
+                const rect = el.getBoundingClientRect();
+                const inView = rect.top < window.innerHeight - 100 && rect.bottom > 0;
+                if (inView) {
+                    el.classList.add('animated');
+                } else {
+                    el.classList.remove('animated'); // Xoá nếu ra khỏi vùng nhìn thấy
+                }
+            });
+        }
+
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('load', animateOnScroll);
+    </script>
 </body>
 
 </html>
