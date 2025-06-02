@@ -29,6 +29,7 @@
                         <li class="active"><a href="services-01.html">固定Wi-Fi</a></li>
                         <li><a href="services-02.html">通話とデータのSIMカード</a></li>
                         <li><a href="services-03.html">日本留学</a></li>
+                        <li><a href="services-04.html">中古品の買取・販売</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
@@ -61,14 +62,17 @@
             <div class="service-row">
                 <h2>固定Wi-Fi</h2>
                 <div class="service-content">
+
                     <div class="slider">
-                        <div class="slides">
+                        <div class="slides" id="slides">
                             <img src="img/products/1.jpg" alt="Sản phẩm 1" />
                             <img src="img/products/2.png" alt="Sản phẩm 2" />
                             <img src="img/products/3.jpg" alt="Sản phẩm 3" />
                             <img src="img/products/4.jpg" alt="Sản phẩm 4" />
                             <img src="img/products/5.jpg" alt="Sản phẩm 5" />
                         </div>
+                        <button class="btn prev" onclick="prevSlide()">‹</button>
+                        <button class="btn next" onclick="nextSlide()">›</button>
                     </div>
 
                     <h3>パートナー向けの固定WiFi料金表</h3>
@@ -98,20 +102,23 @@
                     </div>
                     <p>さらに、格安WiFiもあり、価格は2,500円〜4,500円からです。</p>
                     <p>お問い合わせいただければ、サポートをさせていただきます。</p>
-                    <a class="now" href="https://www.facebook.com/taygiagiawifi" target="_blank" rel="noopener noreferrer">今すぐお問い合わせ</a>
+                    <a class="now" href="https://www.facebook.com/taygiagiawifi" target="_blank"
+                        rel="noopener noreferrer">今すぐお問い合わせ</a>
                 </div>
             </div>
             <div class="service-row">
                 <h2>5GポータブルWiFi</h2>
                 <div class="service-content">
+
                     <div class="slider">
-                        <div class="slides">
+                        <div class="slides" id="slides1">
                             <img src="img/products/6.jpg" alt="Sản phẩm 6" />
                             <img src="img/products/7.jpg" alt="Sản phẩm 7" />
                             <img src="img/products/8.jpg" alt="Sản phẩm 8" />
                         </div>
+                        <button class="btn prev" onclick="prevSlide1()">‹</button>
+                        <button class="btn next" onclick="nextSlide1()">›</button>
                     </div>
-
                     <h3>注意事項：</h3>
                     <div class="red-p">
                         <p>- 15日から翌月の料金が適用されます。</p>
@@ -157,7 +164,8 @@
                             </tbody>
                         </table>
                     </div>
-                    <a class="now" href="https://www.facebook.com/taygiagiawifi" target="_blank" rel="noopener noreferrer">今すぐお問い合わせ</a>
+                    <a class="now" href="https://www.facebook.com/taygiagiawifi" target="_blank"
+                        rel="noopener noreferrer">今すぐお問い合わせ</a>
                 </div>
             </div>
             <div class="service-row">
@@ -225,6 +233,78 @@
         $(document).ready(function () {
             $('.vg-nav').vegasMenu();
         })
+    </script>
+    <script>
+        const slides = document.getElementById('slides');
+        const totalSlides = slides.children.length;
+        let currentIndex = 0;
+        let autoplayInterval;
+
+        function updateSlide() {
+            slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            updateSlide();
+            resetAutoplay();
+        }
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+            updateSlide();
+            resetAutoplay();
+        }
+
+        function startAutoplay() {
+            autoplayInterval = setInterval(() => {
+                nextSlide();
+            }, 4000); // 4 giây
+        }
+
+        function resetAutoplay() {
+            clearInterval(autoplayInterval);
+            startAutoplay();
+        }
+
+        // Khởi động
+        startAutoplay();
+    </script>
+    <script>
+        const slides1 = document.getElementById('slides1');
+        const totalSlides1 = slides1.children.length;
+        let currentIndex1 = 0;
+        let autoplayInterval1;
+
+        function updateSlide1() {
+            slides1.style.transform = `translateX(-${currentIndex1 * 100}%)`;
+        }
+
+        function nextSlide1() {
+            currentIndex1 = (currentIndex1 + 1) % totalSlides1;
+            updateSlide1();
+            resetAutoplay1();
+        }
+
+        function prevSlide1() {
+            currentIndex1 = (currentIndex1 - 1 + totalSlides1) % totalSlides1;
+            updateSlide1();
+            resetAutoplay1();
+        }
+
+        function startAutoplay1() {
+            autoplayInterval1 = setInterval1(() => {
+                nextSlide1();
+            }, 4000); // 4 giây
+        }
+
+        function resetAutoplay1() {
+            clearInterval1(autoplayInterval1);
+            startAutoplay1();
+        }
+
+        // Khởi động
+        startAutoplay1();
     </script>
 </body>
 
