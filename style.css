@@ -859,6 +859,61 @@ hr {
     min-width: 200px;
 }
 
+.tabs {
+    max-width: 500px;
+    margin: auto;
+}
+
+/* Ẩn radio */
+.tabs input {
+    display: none;
+}
+
+/* Tab label */
+.tab-labels {
+    display: flex;
+    border-bottom: 2px solid #ddd;
+}
+
+.tab-labels label {
+    flex: 1;
+    text-align: center;
+    padding: 12px;
+    cursor: pointer;
+    background: #eee;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.tab-labels label:hover {
+    background: #ddd;
+}
+
+/* Active tab */
+#iphone:checked~.tab-labels label[for="iphone"],
+#android:checked~.tab-labels label[for="android"] {
+    background: #fff;
+    border-bottom: 2px solid #007bff;
+    color: #007bff;
+}
+
+/* Nội dung */
+.tab-content {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-top: none;
+}
+
+.content {
+    display: none;
+}
+
+#iphone:checked~.tab-content #content-iphone,
+#android:checked~.tab-content #content-android {
+    display: block;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .single-service:hover .service-desc {
         bottom: 20%;
