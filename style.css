@@ -891,7 +891,9 @@ hr {
 
 /* Active tab */
 #iphone:checked~.tab-labels label[for="iphone"],
-#android:checked~.tab-labels label[for="android"] {
+#android:checked~.tab-labels label[for="android"],
+#iphoneDCM:checked~.tab-labels label[for="iphoneDCM"],
+#androidDCM:checked~.tab-labels label[for="androidDCM"] {
     background: #fff;
     border-bottom: 2px solid #007bff;
     color: #007bff;
@@ -910,7 +912,9 @@ hr {
 }
 
 #iphone:checked~.tab-content #content-iphone,
-#android:checked~.tab-content #content-android {
+#android:checked~.tab-content #content-android,
+#iphoneDCM:checked~.tab-content #content-iphoneDCM,
+#androidDCM:checked~.tab-content #content-androidDCM {
     display: block;
 }
 
